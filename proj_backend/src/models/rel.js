@@ -123,6 +123,7 @@ module.exports = {
     Produto, 
     ItemPedido, 
     Endereco, 
+    CategoriaProduto,
     Estoque 
 }
 
