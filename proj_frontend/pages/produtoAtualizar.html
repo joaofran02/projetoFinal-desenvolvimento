@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/progProdutoAtualizar.js" defer></script>
+    <title>Sistema de E-commerce</title>
+</head>
+<body>
+
+    <header>
+
+        <br>
+
+        <h1 class="stack-sans-text-h1">E-Commerce: Livraria</h1>
+
+        <nav>
+
+            <button id="btnLogout" class="navigationLink">Log Out</button>
+
+            <a href="./produtoCadastrar.html" class="navigationLink stack-sans-text-a">Cadastrar</a>
+            <a href="./produtoAtualizar.html" class="navigationLink stack-sans-text-a">Atualizar</a>
+            <a href="./produtoApagar.html" class="navigationLink stack-sans-text-a">Apagar</a>
+            <a href="./produto.html" class="navigationLink stack-sans-text-a">Ver Produtos</a>
+
+        </nav>
+
+    </header>
+    <main>
+
+        <section id="sidebar">
+
+            <a href="./produto.html" class="tab">Produtos</a>
+            <a href="./estoque.html" class="tab">Estoque</a>
+
+        </section>
+        <section id="info">
+
+            <h2 class="stack-sans-text-h2" id="subtitle">Atualizar Produto</h2>
+            <br>
+            <pc class="stack-sans-text-textBlack">Digite as informações que deseja atualizar (completamente ou parcialmente)</p>
+
+            <form>
+
+                <br>
+
+                <label for="codProduto" class="stack-sans-text-textWhite">Código do produto: </label>
+                <br>
+                <input type="number" id="codProduto">
+
+                <br>
+                <br>
+
+                <label for="nome" class="stack-sans-text-textWhite">Nome: </label>
+                <br>
+                <input type="text" id="nome">
+
+                <br>
+                <br>
+
+                <label for="descricao" class="stack-sans-text-textWhite">Descrição (não obrigatório): </label>
+                <br>
+                <input type="text" id="descricao">
+
+                <br>
+                <br>
+
+                <label for="modelo" class="stack-sans-text-textWhite">Modelo: </label>
+                <br>
+                <input type="text" id="modelo">
+
+                <br>
+                <br>
+
+                <label for="preco" class="stack-sans-text-textWhite">Preço: </label>
+                <br>
+                <input type="number" id="preco">
+
+                <br>
+                <br>
+
+                <label for="imagem_url" class="stack-sans-text-textWhite">Link da imagem (não obrigatório): </label>
+                <br>
+                <input type="text" id="imagem_url">
+
+                <br>
+                <br>
+
+                <label for="ativo" class="stack-sans-text-textWhite">Deixar como ativo: </label>
+                <br>
+                <select id="ativo">
+
+                    <option value="null" selected disabled>Escolha uma das opções...</option>
+                    <option value="true">ATIVO</option>
+                    <option value="false">INATIVO</option>
+
+                </select>
+
+                <br>
+                <br>
+                
+                <button type="submit" id="btn">Atualizar</button>
+
+            </form>
+
+            <div id="res"></div>
+        </section>
+
+    </main>
+    <footer>
+
+
+
+    </footer>
+    
+</body>
+</html>

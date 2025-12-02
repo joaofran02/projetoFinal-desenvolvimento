@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/progEndereco.js" defer></script>
+    <title>Sistema de E-commerce</title>
+</head>
+<body>
+
+    <header>
+
+        <br>
+
+        <h1 class="stack-sans-text-h1">E-Commerce: Livraria</h1>
+
+        <nav>
+
+            <button id="btnLogout" class="navigationLink">Log Out</button>
+
+            <a href="./enderecoApagar.html" class="navigationLink stack-sans-text-a">Apagar</a>
+            <a href="./enderecoConsultar.html" class="navigationLink stack-sans-text-a">Consultar Endereço</a>
+
+        </nav>
+
+    </header>
+    <main>
+        
+        <section id="sidebar">
+
+
+            <a href="./loja.html" class="tab">Loja</a>
+            <a href="./carrinho.html" class="tab">Carrinho</a>
+            <a href="./endereco.html" class="tab">Endereço</a>
+
+        </section>
+        <section id="info">
+
+            <div id="userInfo">
+
+                <h3 class="stack-sans-text-h3">Olá, <span id="resNomeUser"></span></h3>
+                <br>
+                <p class="stack-sans-text-textBlack">Tipo de cadastro: <span id="resTipo"></span></p>
+                
+            </div>
+
+            <h2 class="stack-sans-text-h2" id="subtitle">Cadastrar Endereço</h2>
+            <br>
+
+            <form>
+
+                <br>
+
+                <label for="cep" class="stack-sans-text-textWhite">Digite seu CEP: </label>
+                <br>
+                <input type="text" id="cep" maxlength="9" placeholder="00000-000">
+                <br>
+                <br>
+                <button type="button" id="btnBuscarCep">Buscar</button>
+
+                <br>
+                <br>
+
+                <label for="logradouro" class="stack-sans-text-textWhite">Logradouro: </label>
+                <br>
+                <input type="text" id="logradouro" readonly>
+
+                <br>
+                <br>
+
+                <label for="bairro" class="stack-sans-text-textWhite">Bairro: </label>
+                <br>
+                <input type="text" id="bairro" readonly>
+
+                <br>
+                <br>
+
+                <label for="localidade" class="stack-sans-text-textWhite">Cidade: </label>
+                <br>
+                <input type="text" id="localidade" readonly>
+
+                <br>
+                <br>
+
+                <label for="uf" class="stack-sans-text-textWhite">UF: </label>
+                <br>
+                <input type="text" id="uf" readonly>
+
+                <br>
+                <br>
+
+                <label for="numero" class="stack-sans-text-textWhite">Número: </label>
+                <br>
+                <input type="text" id="numero">
+
+                <br>
+                <br>
+
+                <label for="complemento" class="stack-sans-text-textWhite">Complemento: </label>
+                <br>
+                <input type="text" id="complemento">
+
+                <br>
+                <br>
+
+                <label for="apelido" class="stack-sans-text-textWhite">Apelido (ex: Casa, Trabalho): </label>
+                <br>
+                <input type="text" id="apelido">
+
+                <br>
+                <br>
+
+                <label for="is_principal" class="stack-sans-text-textWhite">
+
+                    <input type="checkbox" id="is_principal"> Endereço principal
+                    
+                </label>
+
+                <br>
+                <br>
+
+                <button type="submit" id="btn">Cadastrar Endereço</button>
+
+            </form>
+
+            <div id="res"></div>
+        </section>
+
+    </main>
+    <footer>
+
+
+
+    </footer>
+    
+</body>
+</html>
